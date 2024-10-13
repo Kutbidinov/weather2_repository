@@ -19,7 +19,7 @@ def get_weather(city):
         return "Не удалось получить данные о погоде. Убедитесь, что город введен правильно."
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
-    await update.message.reply_text('Привет! Я бот, который может показать погоду. Используй команду /weather <город>, чтобы узнать прогноз погоды.')
+    await update.message.reply_text('Привет! Я бот Данислана, который может показать погоду. Используй команду /weather <город>, чтобы узнать прогноз погоды.')
 
 async def weather(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     if context.args:
